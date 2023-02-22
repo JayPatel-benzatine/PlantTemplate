@@ -1,0 +1,144 @@
+@import "../../style/mains.scss";
+
+#hero {
+  padding: 15px;
+  @include desktop {
+    padding: 10vw;
+  }
+
+  .hero_bottom {
+    .wall {
+      position: relative;
+      img {
+        object-fit: cover;
+        max-width: 100%;
+      }
+
+      .hero_sub {
+        .clean {
+          @include clean;
+          @include linepositon(-5vw, 19vw);
+          img {
+            margin-left: 10px;
+            width: 40px;
+            @include mobileS {
+                width: 35px;
+              }
+          }
+          @include tablets {
+            @include linepositon(-10vw, 19vw);
+          }
+          @include mobileS {
+            @include linepositon(-130px,60px);
+          }
+          @include mobileM {
+            @include linepositon(-120px,70px);
+          }
+          @include mobileL {
+            @include linepositon(-120px,80px);
+          }
+        }
+
+        .tree {
+          @include clean;
+          @include linepositon(-5vw, 42vw);
+          img {
+            margin-left: 10px;
+            width: 70px;
+            @include mobileS {
+                width: 55px;
+              }
+          }
+          @include tablets {
+            @include linepositon(-11vw,42vw);
+          }
+          @include mobileS {
+            @include linepositon(-120px,140px);
+          }
+          @include mobileM {
+            @include linepositon(-120px,180px);
+          }
+          @include mobileL {
+            @include linepositon(-120px,180px);
+          }
+        }
+
+        .car {
+          @include clean;
+          @include linepositon(-2vw, unset, 3vw);
+          img {
+            margin-left: 10px;
+            width: 45px;
+            @include mobileS {
+                width: 35px;
+              }
+          }
+          @include tablets {
+            @include linepositon(-8vw, unset, 1vw);
+          }
+          @include mobileS {
+            @include linepositon(-110px, unset, -2px);
+          }
+          @include mobileM {
+            @include linepositon(-110px, unset, -6px);
+          }
+          @include mobileL {
+            @include linepositon(-100px, unset, -5px);
+          }
+        }
+      }
+    }
+  }
+
+  .hero_top {
+    text-align: center;
+    margin: 8rem 0 12rem;
+    @include tablets {
+      margin: 1rem 0 6rem;
+    }
+
+    @include mobile{ 
+      margin: 1rem 0 8rem;
+      padding: 3rem 1rem !important;
+    }
+
+    h5 {
+      text-transform: uppercase;
+      color: $textColor;
+      font-family: $fonts;
+      font-size: 1.5rem;
+      padding-bottom: 15px;
+
+      @include tablets {
+        font-size: 1rem;
+      }
+
+      @include mobile  {
+        font-size: 1rem;
+      }
+    }
+    h2 {
+      font-size: 3.5rem;
+      text-transform: capitalize;
+      font-family: $fonts;
+      padding-bottom: 15px;
+
+      @include tablets {
+        font-size: 2.5rem;
+      }
+
+      @include mobile {
+        font-size: 1.5rem;
+        padding: 0 18px 15px;
+      }
+    }
+
+    .button {
+      @include commanbtn;
+
+      &:hover {
+        background-color: rgb(113, 173, 113);
+      }
+    }
+  }
+}

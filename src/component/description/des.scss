@@ -1,0 +1,26 @@
+@import "../../style/mains.scss";
+
+.decs {
+  .card {
+    margin: 20px 0px;
+    box-shadow: $boxShadow;
+    border: unset;
+    .card-body {
+      .card-title {
+        font-family: $fonts;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding: 10px 0;
+      }
+      .card-text {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        padding-bottom: 10px;
+      }
+      span {
+        color: $textColor;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

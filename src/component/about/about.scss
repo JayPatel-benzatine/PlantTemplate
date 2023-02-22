@@ -1,0 +1,19 @@
+@import "../../style/mains.scss";
+
+.abs {
+  height: 60vh;
+  background-image: url("../../assets/abg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include flexx;
+  font-family: $fonts;
+  text-align: center;
+  color: white;
+  .abs_detail {
+    h1 {
+      font-size: 4.5rem;
+      margin-bottom: 15px;
+    }
+  }
+}

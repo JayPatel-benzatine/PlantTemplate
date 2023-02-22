@@ -1,0 +1,35 @@
+@import "../../style/mains.scss";
+
+.form_main {
+  @include imgBg;
+  @include flexx;
+  @include desktop {
+    justify-content: end;
+  }
+  @include extralarge {
+    justify-content: end;
+  }
+}
+.forms {
+  background-color: $white;
+  width: 60vw;
+  padding: 30px;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  font-family: $fonts;
+  .form-control {
+    background-color: $inputbackground;
+  }
+  .btn {
+    @include commanbtn;
+    font-size: 1rem;
+  }
+  @include desktop {
+    width: 40vw;
+    margin-right: 45px;
+  }
+  @include extralarge {
+    width: 40vw;
+    margin-right: 45px;
+  }
+}

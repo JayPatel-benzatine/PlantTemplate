@@ -1,0 +1,23 @@
+@import "../../style/mains.scss";
+
+.f_head {
+  text-transform: capitalize;
+  font-family: $fonts;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+}
+.forms_cbs {
+  text-transform: capitalize;
+  font-family: $fonts;
+  input,
+  textarea {
+    background-color: #f3f1ef;
+  }
+  .btns{
+      @include commanbtn;
+      font-size: 1rem;
+  }
+}

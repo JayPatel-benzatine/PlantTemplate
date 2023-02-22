@@ -1,0 +1,17 @@
+@import "../../style/mains.scss";
+
+.sol_detail {
+  padding: 20px 0;
+  h1 {
+    font-family: $fonts;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  .pro {
+    h4 {
+      font-family: $fonts;
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+  }
+}

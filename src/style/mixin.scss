@@ -1,0 +1,60 @@
+@import "./variable.scss";
+
+@mixin flexx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grids($col, $frs) {
+  display: grid;
+  grid-template-columns: repeat($col, $frs);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+@mixin links {
+  color: $text-primary;
+  font-family: $fonts;
+  font-size: 13px;
+  font-style: normal;
+  letter-spacing: $letterSpacing;
+  text-transform: uppercase;
+}
+
+@mixin commanbtn {
+  background-color: $textColor;
+  font-family: $fonts;
+  color: $white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+}
+
+@mixin clean {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  border-left: 1px black dashed;
+}
+@mixin linepositon($top: 0, $left: 0, $right: 0) {
+  top: $top;
+  left: $left;
+  right: $right;
+}
+
+@mixin imgBg {
+  height: 100vh;
+  background-image: url("../assets/bgf.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

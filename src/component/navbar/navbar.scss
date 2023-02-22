@@ -1,0 +1,17 @@
+@import "../../style/mains.scss";
+
+.navbar {
+  background: transparent;
+  padding-top: 1rem;
+
+  .navbar-nav {
+    align-items: center;
+    .nav-link {
+      margin: 5px 0px;
+      @include links;
+    }
+  }
+  .navbar-toggler {
+    all: unset;
+  }
+}

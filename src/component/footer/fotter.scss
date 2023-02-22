@@ -1,0 +1,73 @@
+@import "../../style/mains.scss";
+
+.fd {
+  background: $footerbackground;
+  @include mobile {
+    text-align: center;
+  }
+  .footer_main {
+    @include grids(3, 1fr);
+    align-items: unset;
+
+    @include mobile {
+      @include grids(1, 1fr);
+      align-items: unset;
+    }
+
+    .fotter_left {
+      p {
+        font-family: $fonts;
+        @include desktop {
+          font-size: 1.4rem;
+        }
+        @include extralarge {
+          font-size: 1.4rem;
+        }
+      }
+      .iconss {
+        @include desktop {
+          .MuiSvgIcon-root {
+            font-size: 1.6rem;
+          }
+        }
+        @include extralarge {
+          .MuiSvgIcon-root {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    .fotter_middle {
+      font-family: $fonts;
+      .mid_head {
+        font-size: 1.5rem;
+        @include desktop {
+          font-size: 1.7rem;
+        }
+        @include extralarge {
+          font-size: 1.7rem;
+        }
+      }
+      .lists_mid {
+        ul li::before {
+          content: "\2022";
+          color: $textColor;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+        li {
+          list-style: none;
+          margin: 15px 0px;
+          @include desktop {
+            font-size: 1.2rem;
+          }
+          @include extralarge {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

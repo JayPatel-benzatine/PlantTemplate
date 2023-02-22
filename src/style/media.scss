@@ -1,0 +1,41 @@
+// breakpoints
+@mixin mobile {
+  @media (max-width: 426px) and (min-width: 320px) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media (max-width: 425px) and (min-width: 376px) {
+    @content;
+  }
+}
+@mixin mobileM {
+  @media (max-width: 375px) and (min-width: 321px) {
+    @content;
+  }
+}
+@mixin mobileS {
+  @media (max-width: 320px){
+    @content;
+  }
+}
+@mixin tablets {
+  @media (max-width: 768px) and (min-width: 481px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (max-width: 1024px) and (min-width: 769px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1440px) and (min-width: 1025px) {
+    @content;
+  }
+}
+@mixin extralarge {
+  @media  (min-width: 1441px) {
+      @content
+  }
+}

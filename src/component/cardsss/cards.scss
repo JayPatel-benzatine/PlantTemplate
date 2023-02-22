@@ -1,0 +1,34 @@
+@import "../../style/mains.scss";
+
+#cds {
+  @include grids(3, 1fr);
+  @include tablets{
+    @include grids(2, 1fr);
+  }
+  @include mobile{
+    @include grids(1, 1fr);
+  }
+  .card {
+    border: unset;
+    .cbg {
+      text-align: center;
+      font-family: $fonts;
+      background-color: $background;
+      .ct {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        text-transform: capitalize;
+      }
+      .cd {
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .cardsss_btn {
+        color: #8cc63f;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
